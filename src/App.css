@@ -4,32 +4,114 @@
   width:40%;
 }
 
+root{
+  width:100%;
+  margin:0;
+}
+
+@media screen and (max-width:1500px){
+  h1{
+    font-size:4rem;
+  }
+  p{
+    font-size:1.3rem;
+  }
+  h2{
+    font-size:1.8rem;
+  }
+  h3{
+    font-size:1.5rem;
+  }
+  .icon{
+    width:3rem;
+  }
+}
+
+@media (max-width:1200px){
+  h1{
+    font-size:3rem;
+  }
+  p{
+    font-size:1.2rem;
+  }
+  icon{
+    width:2rem;
+  }
+}
+
+@media (max-width:950px){
+  .intro{
+    flex-direction: column-reverse;
+    position:relative;
+    justify-content: center;
+    text-align: center;
+  }
+  .paprota{
+    margin-top:4rem;
+  }
+  .links{
+    margin-left:2rem
+  }
+}
+
+@media (max-width:500px){
+  h2{
+    font-size:1.5rem;
+  }
+}
+
+@media (max-width:700px){
+  h1{
+    font-size:2.5rem;
+  }
+  p{
+    font-size:1rem;
+  }
+  .icon{
+    width:2.5rem;
+  }
+  h2{
+    font-size:1.5rem;
+  }
+  h3{
+    font-size:1.2rem;
+  }
+}
+
+@media (min-width:950px){
+  .intro{
+    margin:auto;
+    margin-top:10rem;
+    width:90%;
+  }
+}
+
+@media (min-width:1500px){
+  h1{
+    font-size:5rem;
+  }
+  p{
+    font-size: 1rem;
+    font-size:2rem;
+  }
+  h2{
+    font-size:3rem;
+  }
+  h3{
+    font-size:2rem;
+  }
+  .icon{
+    width:5rem;
+  }
+}
 h1{
   color:#50C878;
-  font-size:6rem;
   font-family:"Lexend Deca", sans-serif; 
   font-weight:400;
 }
 
-h2{
-  font-size:3rem;
+h2,h3,p{
   color:white;
-}
-
-h3{
-  font-size:2rem;
-  color:white;
-}
-
-h4{
-  font-size:2rem;
-  color:white;
-}
-
-p{
-  color:white;
-  font-size:2rem;
-  
 }
 
 body{
@@ -39,41 +121,50 @@ body{
   margin:0;
 }
 
-.left{
-  width:50%;
+html{
+  margin:0;
 }
 
+.left{
+  width:60%;
+}
+
+
 .intro{
-  width:90%;
-  margin-left:10rem;
-  margin-right:10rem;
-  margin-top:10rem;
   display:flex;
   align-items: center;
 }
 
 .projects{
-  margin-left:10rem;
-  margin-right:10rem;
+  margin:auto;
+  width:90%;
   margin-top:10rem;
 }
 
 .icon{
-  width:5rem;
   margin-right:2rem;
 }
-
 
 .audiophile{
   width:100%;
 }
 
 .space{
-  margin-top:10rem;
+  margin-top:8rem;
 }
 
 .spotify{
-  margin-top:10rem;
-  margin-bottom:10rem;
+  margin-top:8rem;
+  margin-bottom:8rem;
 }
 
+.design{
+  color:white;
+  font-size:2rem;
+  display:flex;
+  justify-self: center;
+  justify-content: center;
+
+  margin-bottom:3rem;
+  
+}
