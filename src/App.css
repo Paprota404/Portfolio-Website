@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+.paprota{
+  width:40%;
+}
+
+h1{
+  color:#50C878;
+  font-size:6rem;
+  font-family:"Lexend Deca", sans-serif; 
+  font-weight:400;
+}
+
+h2{
+  font-size:3rem;
+  color:white;
+}
+
+h3{
+  font-size:2rem;
+  color:white;
+}
+
+h4{
+  font-size:2rem;
+  color:white;
+}
+
+p{
+  color:white;
+  font-size:2rem;
+  
+}
+
+body{
+  background-color:#0B1013;
+  font-family:"Lexend Deca", sans-serif; 
+  font-weight:400;
+  margin:0;
+}
+
+.left{
+  width:50%;
+}
+
+.intro{
+  width:90%;
+  margin-left:10rem;
+  margin-right:10rem;
+  margin-top:10rem;
+  display:flex;
+  align-items: center;
+}
+
+.projects{
+  margin-left:10rem;
+  margin-right:10rem;
+  margin-top:10rem;
+}
+
+.icon{
+  width:5rem;
+  margin-right:2rem;
+}
+
+
+.audiophile{
+  width:100%;
+}
+
+.space{
+  margin-top:10rem;
+}
+
+.spotify{
+  margin-top:10rem;
+  margin-bottom:10rem;
+}
+
