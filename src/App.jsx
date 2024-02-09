@@ -34,12 +34,7 @@ function App() {
           <img className="audiophile" src="/space.png"></img>
         </div>
 
-        <div className="spotify">
-          <h2>SPOTIFY RANDOM PLAYLISTS</h2>
-          <h3>STACK: NEXT.js, Spotify API, React</h3>
-          <h3>SITE: <a href="https://random-spotify-playlist-from-words.vercel.app/" target="blank">https://random-spotify-playlist-from-words.vercel.app/</a></h3>
-          <img className="audiophile" src="/Screenshot_5.png"></img>
-        </div>
+        
 
         
 
