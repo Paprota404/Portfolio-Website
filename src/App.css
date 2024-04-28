@@ -4,6 +4,8 @@
   width: 40%;
 }
 
+
+
 @media screen and (max-width: 1500px) {
   h1 {
     font-size: 4rem;
@@ -44,14 +46,18 @@
   .paprota {
     margin-top: 4rem;
   }
-  .links {
+  .links{
     justify-content: center;
-    display:flex;
   }
   .projects, .skills {
     text-align: center;
   }
   
+}
+
+.links {
+  display:flex;
+  gap:2rem;
 }
 
 @media (max-width: 500px) {
@@ -185,9 +191,7 @@ html {
   margin-top: 15rem;
 }
 
-.icon {
-  margin-right: 3rem;
-}
+
 
 .directme {
   width: 100%;
