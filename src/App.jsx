@@ -53,52 +53,58 @@ function App() {
         )}
       </div>
 
-      <Skills />
+      {imageLoaded ? (
+        <>
+          <Skills />
 
-      <div className="projects">
-        <h1>Projects</h1>
+          <div className="projects">
+            <h1>Projects</h1>
 
-        <div className="directme">
-          <h2>DirectMe - Real-time communicator in Cloud</h2>
-          <h3>STACK: .NET, SignalR, Azure SQL, React, Next.Js, Tailwind</h3>
-          <h3>
-            SITE:{" "}
-            <a href="https://directme-eta.vercel.app/" target="blank">
-              https://directme-eta.vercel.app/
-            </a>
-          </h3>
-          <img className="audiophile" src="/direct.png"></img>
-        </div>
+            <div className="directme">
+              <h2>DirectMe - Real-time communicator in Cloud</h2>
+              <h3>STACK: .NET, SignalR, Azure SQL, React, Next.Js, Tailwind</h3>
+              <h3>
+                SITE:{" "}
+                <a href="https://directme-eta.vercel.app/" target="blank">
+                 https://directme-eta.vercel.app/
+                </a>
+              </h3>
+              <img className="audiophile" src="/direct.png"></img>
+            </div>
 
-        <div className="audiophile">
-          <h2>AUDIOPHILE E-Commerce Site</h2>
-          <h3>STACK: NEXT.js, React, Tailwind</h3>
-          <h3>
-            SITE:{" "}
-            <a
-              href="https://audiophile-e-commerce-site.vercel.app/"
-              target="blank"
-            >
-              https://audiophile-e-commerce-site.vercel.app/
-            </a>
-          </h3>
-          <img className="audiophile" src="/audioph.png"></img>
-        </div>
+            <div className="audiophile">
+              <h2>AUDIOPHILE E-Commerce Site</h2>
+              <h3>STACK: NEXT.js, React, Tailwind</h3>
+              <h3>
+                SITE:{" "}
+                <a
+                 href="https://audiophile-e-commerce-site.vercel.app/"
+                 target="blank"
+                >
+                 https://audiophile-e-commerce-site.vercel.app/
+                </a>
+              </h3>
+              <img className="audiophile" src="/audioph.png"></img>
+            </div>
 
-        <div className="space">
-          <h2>SPACE TOURISM WEBSITE</h2>
-          <h3>STACK: React</h3>
-          <h3>
-            SITE:{" "}
-            <a href="https://sage-mooncake-7f60eb.netlify.app/" target="blank">
-              https://sage-mooncake-7f60eb.netlify.app/
-            </a>
-          </h3>
-          <img className="audiophile" src="/space.png"></img>
-        </div>
-      </div>
+            <div className="space">
+              <h2>SPACE TOURISM WEBSITE</h2>
+              <h3>STACK: React</h3>
+              <h3>
+                SITE:{" "}
+                <a href="https://sage-mooncake-7f60eb.netlify.app/" target="blank">
+                 https://sage-mooncake-7f60eb.netlify.app/
+                </a>
+              </h3>
+              <img className="audiophile" src="/space.png"></img>
+            </div>
+          </div>
 
-      <div className="design">Designed by Me :)</div>
+          <div className="design">Designed by Me :)</div>
+        </>
+      ) : (
+        <div></div>
+      )}
      
     </>
   );
