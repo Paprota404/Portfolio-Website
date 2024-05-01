@@ -1,18 +1,30 @@
 import "./App.css";
 import { motion } from "framer-motion";
-import {Skills} from "./Skills.jsx";
+import { Skills } from "./Skills.jsx";
+import React, { useState } from "react";
 
 function App() {
+  const [imageLoaded, setImageLoaded] = useState(false);
+
   return (
-    <div>
-      <div
-        className="intro"
-        
-      >
-        <motion.div className="left"
-        initial={{opacity:0}}
-        animate={{opacity:1}}
-        transition={{duration:1.5}}>
+    <>
+      <div className="intro">
+
+      <img
+          className="paprota"
+          src="/paprota-img.jpg"
+          alt="Paprota"
+          onLoad={() => setImageLoaded(true)}
+        ></img>
+
+{imageLoaded ? (
+          <>
+        <motion.div
+          className="left"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1.5 }}
+        >
           <h1>Hi, I&apos;m Paprota🌿</h1>
           <p>
             My name is Paweł and I’m Full-Stack Developer with .NET and React.
@@ -32,13 +44,16 @@ function App() {
             </a>
           </div>
         </motion.div>
-        
-        <img className="paprota" src="/paprota-img.jpg" alt="Paprota"></img>
 
+        </>
+        ) : (
+          <div className="loading-screen">
+            <p>Loading...</p>
+          </div>
+        )}
       </div>
 
-     <Skills/>
-
+      <Skills />
 
       <div className="projects">
         <h1>Projects</h1>
@@ -84,7 +99,8 @@ function App() {
       </div>
 
       <div className="design">Designed by Me :)</div>
-    </div>
+     
+    </>
   );
 }
 
