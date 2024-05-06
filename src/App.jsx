@@ -5,7 +5,7 @@ import React, { useState } from "react";
 
 function App() {
   const [imageLoaded, setImageLoaded] = useState(false);
-
+// why i dont get github streak on side branch
   return (
     <>
       <div className="intro">
