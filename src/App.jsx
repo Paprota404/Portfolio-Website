@@ -64,6 +64,7 @@ function App() {
               <h2>DirectMe - Real-time communicator in Cloud</h2>
               <h3>STACK: .NET, SignalR, Azure SQL, React, Next.Js, Tailwind</h3>
               <h3>
+             {/* I don't know if i will get commits from side branch */}
                 SITE:{" "}
                 <a href="https://directme-eta.vercel.app/" target="blank">
                  https://directme-eta.vercel.app/
