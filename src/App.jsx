@@ -5,47 +5,46 @@ import React, { useState } from "react";
 
 function App() {
   const [imageLoaded, setImageLoaded] = useState(false);
-// why i dont get github streak on side branch
+  // why i dont get github streak on side branch
   return (
     <>
       <div className="intro">
-
-      <img
+        <img
           className="paprota"
           src="/paprota-img.jpg"
           alt="Paprota"
           onLoad={() => setImageLoaded(true)}
         ></img>
 
-{imageLoaded ? (
+        {imageLoaded ? (
           <>
-        <motion.div
-          className="left"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1.5 }}
-        >
-          <h1>Hi, I&apos;m Paprota🌿</h1>
-          <p>
-            My name is Paweł and I’m Full-Stack Developer with .NET and React.
-          </p>
-          <div className="links">
-            <a target="blank" href="https://github.com/Paprota404">
-              <img className="icon" src="github-mark-white.png"></img>
-            </a>
-            <a href="mailto:paprota404@gmail.com">
-              <img className="icon" src="gmail (1).png"></img>
-            </a>
-            <a
-              target="blank"
-              href="https://www.linkedin.com/in/pawe%C5%82-pro%C4%87-1704702bb/"
+            <motion.div
+              className="left"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1.5 }}
             >
-              <img className="icon" src="LinkedIn.svg"></img>
-            </a>
-          </div>
-        </motion.div>
-
-        </>
+              <h1>Hi, I&apos;m Paprota🌿</h1>
+              <p>
+                My name is Paweł and I’m Full-Stack Developer with .NET and
+                React.
+              </p>
+              <div className="links">
+                <a target="blank" href="https://github.com/Paprota404">
+                  <img className="icon" src="github-mark-white.png"></img>
+                </a>
+                <a href="mailto:paprota404@gmail.com">
+                  <img className="icon" src="gmail (1).png"></img>
+                </a>
+                <a
+                  target="blank"
+                  href="https://www.linkedin.com/in/pawe%C5%82-pro%C4%87-1704702bb/"
+                >
+                  <img className="icon" src="LinkedIn.svg"></img>
+                </a>
+              </div>
+            </motion.div>
+          </>
         ) : (
           <div className="loading-screen">
             <p>Loading...</p>
@@ -64,11 +63,12 @@ function App() {
               <h2>DirectMe - Real-time communicator in Cloud</h2>
               <h3>STACK: .NET, SignalR, Azure SQL, React, Next.Js, Tailwind</h3>
               <h3>
-             {/* I don't know if i will get commits from side branch */}
-             {/* I don't know if i will get commits from side branch */}
+                {/* I don't know if i will get commits from side branch */}
+                {/* I don't know if i will get commits from side branch */}
+                {/* I'm working on DirectMe */}
                 SITE:{" "}
                 <a href="https://directme-eta.vercel.app/" target="blank">
-                 https://directme-eta.vercel.app/
+                  https://directme-eta.vercel.app/
                 </a>
               </h3>
               <img className="audiophile" src="/direct.png"></img>
@@ -80,10 +80,10 @@ function App() {
               <h3>
                 SITE:{" "}
                 <a
-                 href="https://audiophile-e-commerce-site.vercel.app/"
-                 target="blank"
+                  href="https://audiophile-e-commerce-site.vercel.app/"
+                  target="blank"
                 >
-                 https://audiophile-e-commerce-site.vercel.app/
+                  https://audiophile-e-commerce-site.vercel.app/
                 </a>
               </h3>
               <img className="audiophile" src="/audioph.png"></img>
@@ -94,8 +94,11 @@ function App() {
               <h3>STACK: React</h3>
               <h3>
                 SITE:{" "}
-                <a href="https://sage-mooncake-7f60eb.netlify.app/" target="blank">
-                 https://sage-mooncake-7f60eb.netlify.app/
+                <a
+                  href="https://sage-mooncake-7f60eb.netlify.app/"
+                  target="blank"
+                >
+                  https://sage-mooncake-7f60eb.netlify.app/
                 </a>
               </h3>
               <img className="audiophile" src="/space.png"></img>
@@ -107,7 +110,6 @@ function App() {
       ) : (
         <div></div>
       )}
-     
     </>
   );
 }
