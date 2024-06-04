@@ -1,7 +1,7 @@
 import "./App.css";
 import { motion } from "framer-motion";
 import { Skills } from "./Skills.jsx";
-import React, { useState } from "react";
+import { useState } from "react";
 
 function App() {
   const [imageLoaded, setImageLoaded] = useState(false);
@@ -86,6 +86,7 @@ function App() {
                 {/* Leetcode */}
                 {/* Leetcode */}
                 {/* Hard days */}
+                 {/* Audio UI */}
                 SITE:{" "}
                 <a href="https://directme-eta.vercel.app/" target="blank">
                   https://directme-eta.vercel.app/
