@@ -100,6 +100,7 @@ function App() {
                 {/* Leetcode */}
                 {/* Leetcode */}
                 {/* Computer Science */}
+                {/* Leetcode and voluntary work */}
                 SITE:{" "}
                 <a href="https://directme-eta.vercel.app/" target="blank">
                   https://directme-eta.vercel.app/
