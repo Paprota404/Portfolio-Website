@@ -104,6 +104,7 @@ function App() {
                 {/* Leetcode */}
                 {/* Leetcode */}
                 {/* Leetcode */}
+                {/* Leetcode and CS*/}
                 SITE:{" "}
                 <a href="https://directme-eta.vercel.app/" target="blank">
                   https://directme-eta.vercel.app/
