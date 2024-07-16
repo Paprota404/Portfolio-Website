@@ -105,12 +105,13 @@ function App() {
                 {/* Leetcode */}
                 {/* Leetcode */}
                 {/* Leetcode and CS*/}
+                
                 SITE:{" "}
                 <a href="https://directme-eta.vercel.app/" target="blank">
                   https://directme-eta.vercel.app/
                 </a>
               </h3>
-              <img className="audiophile" src="/direct.png"></img>
+              <img className="audiophile" src="/Directe.png"></img>
             </div>
 
             <div className="audiophile">
