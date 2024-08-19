@@ -1,10 +1,11 @@
 
 import { motion } from 'framer-motion';
-import { useOnScreen } from './useOnScreen'; // Adjust the import path as necessary
+import { useOnScreen } from './useOnScreen';
 
+// eslint-disable-next-line react/prop-types
 const Skill = ({ icon, name }) => {
  const [ref, isIntersecting] = useOnScreen({
-    threshold: 0.5, // Adjust the threshold as needed
+    threshold: 0.5, 
  });
 
  return (

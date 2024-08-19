@@ -116,7 +116,7 @@ function App() {
 
             <div className="audiophile">
               <h2>AUDIOPHILE E-Commerce Site</h2>
-              <h3>STACK: NEXT.js, React, Tailwind</h3>
+              <h3>STACK: NEXT.JS, React, Tailwind</h3>
               <h3>
                 SITE:{" "}
                 <a

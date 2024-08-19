@@ -1,63 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
 
-.paprota {
-  width: 40%;
+/* General Styles */
+body, html {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0b1013;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
 }
 
-.loading-screen {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+h1, h2, h3, p {
+  color: white;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
 }
 
-@media screen and (max-width: 1500px) {
-  h1 {
-    font-size: 4rem;
-  }
-  p {
-    font-size: 1.3rem;
-  }
-  h2 {
-    font-size: 1.8rem;
-  }
-  h3 {
-    font-size: 1.5rem;
-  }
-  .icon {
-    width: 3rem;
-  }
-}
-
-@media (max-width: 1200px) {
-  h1 {
-    font-size: 3rem;
-  }
-  p {
-    font-size: 1.2rem;
-  }
-  icon {
-    width: 2rem;
-  }
-}
-
-@media (max-width: 950px) {
-  .intro {
-    flex-direction: column-reverse;
-    position: relative;
-    justify-content: center;
-    text-align: center;
-  }
-  .paprota {
-    margin-top: 4rem;
-  }
-  .links {
-    justify-content: center;
-  }
-  .projects,
-  .skills {
-    text-align: center;
-  }
+h1 {
+  color: #50c878;
 }
 
 .links {
@@ -65,91 +25,8 @@
   gap: 2rem;
 }
 
-@media (max-width: 500px) {
-  h2 {
-    font-size: 1.5rem;
-  }
-}
-
-@media (max-width: 700px) {
-  h1 {
-    font-size: 2.5rem;
-  }
-  p {
-    font-size: 1rem;
-  }
-  .icon {
-    width: 2.5rem;
-  }
-  h2 {
-    font-size: 1.5rem;
-  }
-  h3 {
-    font-size: 1.2rem;
-  }
-}
-
-@media (max-width: 650px) {
-  .skill-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 950px) {
-  .intro {
-    margin: auto;
-    padding-top: 8rem;
-    width: 90%;
-  }
-}
-
-@media (min-width: 650px) {
-  .skill-grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-@media (min-width: 1500px) {
-  h1 {
-    font-size: 5rem;
-  }
-  p {
-    font-size: 1rem;
-    font-size: 2rem;
-  }
-  h2 {
-    font-size: 3rem;
-  }
-  h3 {
-    font-size: 2rem;
-  }
-  .icon {
-    width: 5rem;
-  }
-}
-h1 {
-  color: #50c878;
-  font-family: "Lexend Deca", sans-serif;
-  font-weight: 400;
-}
-
-h2,
-h3,
-p {
-  color: white;
-}
-
-body {
-  background-color: #0b1013;
-  font-family: "Lexend Deca", sans-serif;
-  font-weight: 400;
-  margin: 0;
-  width: 100%;
-  height: 100%;
-}
-
-html {
-  margin: 0;
+.paprota {
+  width: 40%;
 }
 
 .left {
@@ -159,11 +36,11 @@ html {
 .intro {
   display: flex;
   align-items: center;
-  background-color: #0b1013;
   flex-direction: row-reverse;
+  background-color: #0b1013;
 }
 
-.skills {
+.skills, .projects {
   margin: auto;
   width: 90%;
   margin-top: 15rem;
@@ -171,7 +48,6 @@ html {
 
 .skill-grid {
   display: grid;
-
   gap: 2rem;
 }
 
@@ -189,19 +65,16 @@ html {
   width: 50%;
 }
 
-.projects {
-  margin: auto;
-  width: 90%;
-  margin-top: 15rem;
+.loading-screen {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.directme {
+.directme, .audiophile {
   width: 100%;
   margin-bottom: 8rem;
-}
-
-.audiophile {
-  width: 100%;
 }
 
 .space {
@@ -212,6 +85,85 @@ html {
   color: white;
   font-size: 2rem;
   display: flex;
-  justify-self: center;
   justify-content: center;
+}
+
+/* Media Queries */
+@media (max-width: 1500px) {
+  h1 { font-size: 4rem; }
+  p { font-size: 1.3rem; }
+  h2 { font-size: 1.8rem; }
+  h3 { font-size: 1.5rem; }
+  .icon { width: 3rem; }
+}
+
+@media (max-width: 1200px) {
+  h1 { font-size: 3rem; }
+  p { font-size: 1.2rem; }
+  .icon { width: 2rem; }
+}
+
+@media (max-width: 950px) {
+  .intro {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .paprota {
+    margin-top: 4rem;
+  }
+  
+  .links {
+    justify-content: center;
+  }
+  
+  .projects, .skills {
+    text-align: center;
+  }
+  .design{
+    font-size:1.5rem;
+  }
+}
+
+@media (max-width: 700px) {
+  h1 { font-size: 2.5rem; }
+  p { font-size: 1rem; }
+  .icon { width: 2.5rem; }
+  h2 { font-size: 1.5rem; }
+  h3 { font-size: 1.2rem; }
+  
+}
+
+@media (max-width: 650px) {
+  .skill-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  h2 { font-size: 1.5rem; }
+}
+
+@media (min-width: 650px) {
+  .skill-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 950px) {
+  .intro {
+    margin: auto;
+    padding-top: 8rem;
+    width: 90%;
+  }
+}
+
+@media (min-width: 1500px) {
+  h1 { font-size: 5rem; }
+  p { font-size: 2rem; }
+  h2 { font-size: 3rem; }
+  h3 { font-size: 2rem; }
+  .icon { width: 5rem; }
 }

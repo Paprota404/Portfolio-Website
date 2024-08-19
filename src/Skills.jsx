@@ -6,7 +6,7 @@ export const Skills = () => {
     { icon: "NET core.svg", name: ".NET" },
     { icon: "PostgresSQL.svg", name: "PostgreSQL" },
     { icon: "React.svg", name: "React" },
-    { icon: "Next.js.svg", name: "Next.Js" },
+    { icon: "Next.js.svg", name: "Next.JS" },
     { icon: "Tailwind CSS.svg", name: "Tailwind CSS" },
     { icon: "Git.svg", name: "Git" },
     { icon: "Azure.svg", name: "Azure" },
@@ -24,7 +24,7 @@ export const Skills = () => {
           visible: {
             opacity: 1,
             transition: {
-              staggerChildren: 0.2, // Delay between each child's animation
+              staggerChildren: 0.2,
             },
           },
         }}
